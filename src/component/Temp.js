@@ -35,16 +35,16 @@ function Temp() {
           id: data.sys.country,
         },
         {
-          name: "Sea Level",
-          id: data.main.sea_level,
+          name: "Wind Speed",
+          id: data.wind.speed,
         },
         {
           name: "Sunrise",
-          id: data.sys.sunrise,
+          id: new Date(data.sys.sunrise).toLocaleTimeString(),
         },
         {
           name: "Sunset",
-          id: data.sys.sunset,
+          id: new Date(data.sys.sunset).toLocaleTimeString(),
         },
       ];
       setCity(data.name);
